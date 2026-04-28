@@ -18,17 +18,34 @@ namespace Library_Management_System_API.Controllers
         public async Task<IActionResult> GetBooks()
         {
             var books = await _context.Books.ToListAsync();
-            return Ok(books);
+
+            return Ok(new
+            {
+                success = true,
+                message = "Books retrieved successfully",
+                data = books
+            });
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBookById(int id)
         {
             var book = await _context.Books.FindAsync(id);
+
             if (book == null)
             {
-                return NotFound();
+                return NotFound(new
+                {
+                    success = false,
+                    message = "Book not found"
+                });
             }
-            return Ok(book);
+
+            return Ok(new
+            {
+                success = true,
+                message = "Book retrieved successfully",
+                data = book
+            });
         }
         [HttpPost]
         public async Task<IActionResult> AddBook(CreateBookDto dto)
@@ -45,7 +62,64 @@ namespace Library_Management_System_API.Controllers
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetBookById), new { id = book.Id }, book);
+            return CreatedAtAction(nameof(GetBookById), new { id = book.Id }, new
+            {
+                success = true,
+                message = "Book created successfully",
+                data = book
+            });
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateBook(int id, UpdateBookDto dto)
+        {
+            var book = await _context.Books.FindAsync(id);
+
+            if (book == null)
+            {
+                return NotFound(new
+                {
+                    success = false,
+                    message = "Book not found"
+                });
+            }
+
+            book.Title = dto.Title;
+            book.Author = dto.Author;
+            book.Category = dto.Category;
+            book.ISBN = dto.ISBN;
+            book.Quantity = dto.Quantity;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                success = true,
+                message = "Book updated successfully",
+                data = book
+            });
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBook(int id)
+        {
+            var book = await _context.Books.FindAsync(id);
+
+            if (book == null)
+            {
+                return NotFound(new
+                {
+                    success = false,
+                    message = "Book not found"
+                });
+            }
+
+            _context.Books.Remove(book);
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                success = true,
+                message = "Book deleted successfully"
+            });
         }
     }
 }
