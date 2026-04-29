@@ -15,14 +15,56 @@ namespace Library_Management_System_API.Controllers
             _context = context;
         }
         [HttpGet]
-        public async Task<IActionResult> GetBooks()
+        public async Task<IActionResult> GetBooks(
+     int pageNumber = 1,
+     int pageSize = 5,
+     string? search = null,
+     string? category = null,
+     string? author = null)
         {
-            var books = await _context.Books.ToListAsync();
+            pageSize = pageSize > 10 ? 10 : pageSize;
+            pageNumber = pageNumber < 1 ? 1 : pageNumber;
+
+            var query = _context.Books.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+                query = query.Where(b => b.Title.Contains(search));
+
+            if (!string.IsNullOrWhiteSpace(category))
+                query = query.Where(b => b.Category.Contains(category));
+
+            if (!string.IsNullOrWhiteSpace(author))
+                query = query.Where(b => b.Author.Contains(author));
+
+            var totalCount = await query.CountAsync();
+
+            var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
+
+            var books = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .Select(b => new BookDto
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    Author = b.Author,
+                    Category = b.Category
+                })
+                .ToListAsync();
 
             return Ok(new
             {
                 success = true,
                 message = "Books retrieved successfully",
+                pagination = new
+                {
+                    pageNumber,
+                    pageSize,
+                    totalCount,
+                    totalPages,
+                    hasNextPage = pageNumber < totalPages,
+                    hasPreviousPage = pageNumber > 1
+                },
                 data = books
             });
         }
