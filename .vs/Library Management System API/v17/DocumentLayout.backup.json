@@ -1,0 +1,263 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Library Management System API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\dto\\updatebookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\dto\\updatebookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\dto\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\dto\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\migrations\\20260428113534_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\migrations\\20260428113534_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\migrations\\20260430130151_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\migrations\\20260430130151_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Library Management System API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:02:32.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260430130151_user.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260430130151_user.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260430130151_user.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260430130151_user.cs",
+              "RelativeToolTip": "Library Management System API\\Migrations\\20260430130151_user.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:01:51.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\User.cs",
+              "RelativeToolTip": "Library Management System API\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:00:48.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\BookDto.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Dto\\BookDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\BookDto.cs",
+              "RelativeToolTip": "Library Management System API\\Dto\\BookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T15:51:44.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdateBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\UpdateBookDto.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Dto\\UpdateBookDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\UpdateBookDto.cs",
+              "RelativeToolTip": "Library Management System API\\Dto\\UpdateBookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T15:50:52.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\appsettings.json",
+              "RelativeDocumentMoniker": "Library Management System API\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\appsettings.json",
+              "RelativeToolTip": "Library Management System API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-28T11:28:11.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Program.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Program.cs",
+              "RelativeToolTip": "Library Management System API\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:14:31.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Library Management System API\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwEAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:39:03.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Dto\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\LoginDto.cs",
+              "RelativeToolTip": "Library Management System API\\Dto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:03:33.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Dto\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\RegisterDto.cs",
+              "RelativeToolTip": "Library Management System API\\Dto\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:02:12.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\CreateBookDto.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Dto\\CreateBookDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\CreateBookDto.cs",
+              "RelativeToolTip": "Library Management System API\\Dto\\CreateBookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T12:33:26.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20260428113534_book.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260428113534_book.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260428113534_book.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260428113534_book.cs",
+              "RelativeToolTip": "Library Management System API\\Migrations\\20260428113534_book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:35:34.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Library Management System API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:27:23.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\Book.cs",
+              "RelativeToolTip": "Library Management System API\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T11:21:00.195Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 358,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
