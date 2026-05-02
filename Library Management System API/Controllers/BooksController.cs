@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Library_Management_System_API.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
@@ -17,6 +16,8 @@ namespace Library_Management_System_API.Controllers
             _context = context;
         }
         [HttpGet]
+        [AllowAnonymous]
+
         public async Task<IActionResult> GetBooks(
                  int pageNumber = 1,
                  int pageSize = 5,
@@ -71,6 +72,8 @@ namespace Library_Management_System_API.Controllers
             });
         }
         [HttpGet("{id}")]
+        [AllowAnonymous]
+
         public async Task<IActionResult> GetBookById(int id)
         {
             var book = await _context.Books.FindAsync(id);
@@ -92,6 +95,7 @@ namespace Library_Management_System_API.Controllers
             });
         }
         [HttpPost]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> AddBook(CreateBookDto dto)
         {
             var book = new Models.Book
@@ -114,6 +118,7 @@ namespace Library_Management_System_API.Controllers
             });
         }
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> UpdateBook(int id, UpdateBookDto dto)
         {
             var book = await _context.Books.FindAsync(id);
@@ -143,6 +148,7 @@ namespace Library_Management_System_API.Controllers
             });
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteBook(int id)
         {
             var book = await _context.Books.FindAsync(id);
