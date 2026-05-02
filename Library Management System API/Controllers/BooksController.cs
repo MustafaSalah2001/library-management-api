@@ -162,6 +162,20 @@ namespace Library_Management_System_API.Controllers
                 });
             }
 
+            var hasActiveBorrowing = await _context.Borrowings.AnyAsync(b =>
+                b.BookId == id &&
+                b.Status == "Borrowed"
+            );
+
+            if (hasActiveBorrowing)
+            {
+                return BadRequest(new
+                {
+                    success = false,
+                    message = "Cannot delete book because it has active borrowings"
+                });
+            }
+
             _context.Books.Remove(book);
             await _context.SaveChangesAsync();
 

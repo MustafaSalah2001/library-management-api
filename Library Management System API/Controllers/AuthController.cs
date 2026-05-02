@@ -71,9 +71,9 @@ public class AuthController : ControllerBase
             });
         }
 
-        var hashedPassword = HashPassword(dto.Password);
+        var isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
 
-        if (user.PasswordHash != hashedPassword)
+        if (!isPasswordValid)
         {
             return Unauthorized(new
             {
@@ -120,11 +120,6 @@ public class AuthController : ControllerBase
 
     private string HashPassword(string password)
     {
-        using var sha256 = SHA256.Create();
-
-        var bytes = Encoding.UTF8.GetBytes(password);
-        var hash = sha256.ComputeHash(bytes);
-
-        return Convert.ToBase64String(hash);
+        return BCrypt.Net.BCrypt.HashPassword(password);
     }
 }

@@ -153,6 +153,88 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Library_Management_System_API.Controllers.BorrowingsController",
+    "Method": "GetAllBorrowings",
+    "RelativePath": "api/Borrowings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.BorrowingsController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/Borrowings/{id}/return",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.BorrowingsController",
+    "Method": "BorrowBook",
+    "RelativePath": "api/Borrowings/borrow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Library_Management_System_API.Dto.BorrowBookDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.BorrowingsController",
+    "Method": "GetMyBorrowings",
+    "RelativePath": "api/Borrowings/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.BorrowingsController",
+    "Method": "GetOverdueBorrowings",
+    "RelativePath": "api/Borrowings/overdue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.ReportsController",
+    "Method": "GetMostBorrowedBooks",
+    "RelativePath": "api/Reports/most-borrowed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.ReportsController",
+    "Method": "GetSummary",
+    "RelativePath": "api/Reports/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Library_Management_System_API.Controllers.UsersController",
     "Method": "UpdateUserRole",
     "RelativePath": "api/Users/{id}/role",

@@ -10,5 +10,6 @@ namespace Library_Management_System_API.Data
         }
         public DbSet<Book> Books { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Borrowing> Borrowings { get; set; }
     }
 }
