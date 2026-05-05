@@ -453,20 +453,15 @@
         "additionalProperties": false
       },
       "LoginDto": {
-        "required": [
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "password": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
