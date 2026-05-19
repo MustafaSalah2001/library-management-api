@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Library Management System API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0FB6C090-E06F-4F36-9B10-1EDCE3C2CDCD}|LibraryManagement.Tests\\LibraryManagement.Tests.csproj|c:\\users\\hp\\desktop\\library management system api\\librarymanagement.tests\\borrowingservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FB6C090-E06F-4F36-9B10-1EDCE3C2CDCD}|LibraryManagement.Tests\\LibraryManagement.Tests.csproj|solutionrelative:librarymanagement.tests\\borrowingservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|c:\\users\\hp\\desktop\\library management system api\\library management system api\\services\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{143FB3DD-A604-4463-AEE2-3B4A0AA9F53A}|Library Management System API\\Library Management System API.csproj|solutionrelative:library management system api\\services\\borrowingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0FB6C090-E06F-4F36-9B10-1EDCE3C2CDCD}|LibraryManagement.Tests\\LibraryManagement.Tests.csproj|c:\\users\\hp\\desktop\\library management system api\\librarymanagement.tests\\services\\finecalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FB6C090-E06F-4F36-9B10-1EDCE3C2CDCD}|LibraryManagement.Tests\\LibraryManagement.Tests.csproj|solutionrelative:librarymanagement.tests\\services\\finecalculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -150,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +170,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BorrowingServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\LibraryManagement.Tests\\BorrowingServiceTests.cs",
+              "RelativeDocumentMoniker": "LibraryManagement.Tests\\BorrowingServiceTests.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\LibraryManagement.Tests\\BorrowingServiceTests.cs",
+              "RelativeToolTip": "LibraryManagement.Tests\\BorrowingServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:31:13.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BorrowingService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Services\\BorrowingService.cs",
+              "RelativeDocumentMoniker": "Library Management System API\\Services\\BorrowingService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Services\\BorrowingService.cs",
+              "RelativeToolTip": "Library Management System API\\Services\\BorrowingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T07:30:43.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FineService.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Services\\FineService.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Services\\FineService.cs",
@@ -175,20 +209,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FineCalculatorTests.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\LibraryManagement.Tests\\Services\\FineCalculatorTests.cs",
               "RelativeDocumentMoniker": "LibraryManagement.Tests\\Services\\FineCalculatorTests.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\Library Management System API\\LibraryManagement.Tests\\Services\\FineCalculatorTests.cs",
               "RelativeToolTip": "LibraryManagement.Tests\\Services\\FineCalculatorTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T07:21:26.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\LibraryManagement.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "LibraryManagement.Tests\\UnitTest1.cs",
@@ -201,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "BorrowingsController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\BorrowingsController.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Controllers\\BorrowingsController.cs",
@@ -214,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Middleware\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Middleware\\ExceptionMiddleware.cs",
@@ -227,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "CreateBookDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Validators\\CreateBookDtoValidator.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Validators\\CreateBookDtoValidator.cs",
@@ -240,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Library Management System API.csproj",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Library Management System API.csproj",
               "RelativeDocumentMoniker": "Library Management System API\\Library Management System API.csproj",
@@ -253,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "LoginDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Validators\\LoginDtoValidator.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Validators\\LoginDtoValidator.cs",
@@ -266,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DbSeeder.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Data\\DbSeeder.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Data\\DbSeeder.cs",
@@ -279,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Controllers\\AuthController.cs",
@@ -292,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\appsettings.json",
               "RelativeDocumentMoniker": "Library Management System API\\appsettings.json",
@@ -305,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Data\\AppDbContext.cs",
@@ -318,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Program.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Program.cs",
@@ -331,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Borrowing.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\Borrowing.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Models\\Borrowing.cs",
@@ -344,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "BooksController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Controllers\\BooksController.cs",
@@ -357,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\LoginDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\LoginDto.cs",
@@ -370,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "BorrowBookDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\BorrowBookDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\BorrowBookDto.cs",
@@ -383,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "RegisterDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Validators\\RegisterDtoValidator.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Validators\\RegisterDtoValidator.cs",
@@ -396,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Controllers\\ReportsController.cs",
@@ -409,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "20260502114725_AddFineAmountToBorrowing.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260502114725_AddFineAmountToBorrowing.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260502114725_AddFineAmountToBorrowing.cs",
@@ -422,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "20260502095807_Borrowing.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260502095807_Borrowing.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260502095807_Borrowing.cs",
@@ -435,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Controllers\\UsersController.cs",
@@ -448,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "UpdateUserRoleDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\UpdateUserRoleDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\UpdateUserRoleDto.cs",
@@ -461,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Library Management System API.GlobalUsings.g.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\obj\\Debug\\net9.0\\Library Management System API.GlobalUsings.g.cs",
               "RelativeDocumentMoniker": "Library Management System API\\obj\\Debug\\net9.0\\Library Management System API.GlobalUsings.g.cs",
@@ -474,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Library Management System API.MvcApplicationPartsAssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\obj\\Debug\\net9.0\\Library Management System API.MvcApplicationPartsAssemblyInfo.cs",
               "RelativeDocumentMoniker": "Library Management System API\\obj\\Debug\\net9.0\\Library Management System API.MvcApplicationPartsAssemblyInfo.cs",
@@ -487,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Library Management System API.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\obj\\Debug\\net9.0\\Library Management System API.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Library Management System API\\obj\\Debug\\net9.0\\Library Management System API.AssemblyInfo.cs",
@@ -500,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "20260502093452_role.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260502093452_role.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260502093452_role.cs",
@@ -513,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "20260430130151_user.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260430130151_user.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260430130151_user.cs",
@@ -526,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\User.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Models\\User.cs",
@@ -539,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "BookDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\BookDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\BookDto.cs",
@@ -552,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "UpdateBookDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\UpdateBookDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\UpdateBookDto.cs",
@@ -565,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\RegisterDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\RegisterDto.cs",
@@ -578,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "CreateBookDto.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Dto\\CreateBookDto.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Dto\\CreateBookDto.cs",
@@ -591,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "20260428113534_book.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Migrations\\20260428113534_book.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Migrations\\20260428113534_book.cs",
@@ -604,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Library Management System API\\Library Management System API\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Library Management System API\\Models\\Book.cs",
