@@ -1,10 +1,23 @@
 # Library Management System API
 
+![.NET](https://img.shields.io/badge/.NET-8.0-blue)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![CI](https://img.shields.io/badge/CI-passing-success)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+---
+
 ## Overview
 
-A RESTful API built with ASP.NET Core Web API for managing library operations such as book management, user authentication, borrowing and returning books, and fine calculations.
+A RESTful API built with ASP.NET Core Web API for managing library operations such as:
 
-This project demonstrates clean backend architecture practices including JWT Authentication, Role-Based Authorization, Validation, Pagination, and Global Exception Handling.
+- Book management
+- User authentication & authorization
+- Borrowing and returning books
+- Fine calculation system
+- Role-based access control
+
+This project demonstrates backend development best practices including JWT Authentication, Validation, Exception Handling, Unit Testing, and CI automation.
 
 ---
 
@@ -20,6 +33,8 @@ This project demonstrates clean backend architecture practices including JWT Aut
 - Global Exception Middleware
 - Swagger API Documentation
 - Entity Framework Core with SQL Server
+- Unit Testing with xUnit
+- GitHub Actions CI Pipeline
 
 ---
 
@@ -31,6 +46,8 @@ This project demonstrates clean backend architecture practices including JWT Aut
 - JWT Authentication
 - FluentValidation
 - Swagger / OpenAPI
+- xUnit
+- GitHub Actions
 
 ---
 
@@ -51,9 +68,11 @@ Controllers/
 DTOs/
 Models/
 Data/
+Services/
 Validators/
 Middleware/
 Migrations/
+Tests/
 ```
 
 ---
@@ -98,6 +117,24 @@ Bearer YOUR_TOKEN
 
 ---
 
+## Running Tests
+
+```bash
+dotnet test
+```
+
+---
+
+## Continuous Integration
+
+GitHub Actions automatically:
+
+- Restores dependencies
+- Builds the project
+- Runs all unit tests on every push
+
+---
+
 ## API Documentation
 
 Swagger UI will be available at:
@@ -111,11 +148,9 @@ https://localhost:{port}/swagger
 ## Future Improvements
 
 - Refresh Tokens
-- Unit & Integration Testing
 - Docker Support
-- CI/CD Pipeline
-- Caching
-- Logging System
+- Integration Testing
+- Deployment
 
 ---
 
