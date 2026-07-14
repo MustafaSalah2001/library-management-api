@@ -12,6 +12,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Services
 builder.Services.AddControllers();
+
+// 1. [CORS Setup]  ⁄—Ì› ”Ì«”… «·”„«Õ ··‹ React
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        policy => policy.WithOrigins("http://localhost:5173") // —«»ÿ «·‹ React «·«› —«÷Ì
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+});
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.InvalidModelStateResponseFactory = context =>
@@ -87,6 +97,13 @@ builder.Services.AddAuthentication(options =>
         )
     };
 });
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReact",
+        policy => policy.WithOrigins("http://localhost:5173") // —«»ÿ «·—Ì«ﬂ 
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+});
 var app = builder.Build();
 
 // Swagger
@@ -99,9 +116,14 @@ app.MapGet("/", () => Results.Redirect("/swagger"));
 
 app.UseHttpsRedirection();
 app.UseMiddleware<ExceptionMiddleware>();
+
+// 2. [CORS Setup]  ›⁄Ì· «·‹ CORS (·«“„ ÌﬂÊ‰ ﬁ»· «·‹ Authentication Ê«·‹ Authorization)
+app.UseCors("AllowReactApp");
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();

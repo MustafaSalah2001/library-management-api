@@ -44,7 +44,8 @@ public class AuthController : ControllerBase
             Username = dto.Username,
             Email = dto.Email,
             PasswordHash = HashPassword(dto.Password),
-            Role = "Member"
+            Role = "Member",
+            IsApproved = false // 👈 تأكد من وجود هذا السطر بالـ Register
         };
 
         _context.Users.Add(user);
@@ -81,6 +82,15 @@ public class AuthController : ControllerBase
                 message = "Invalid email or password"
             });
         }
+        // التحقق من أن الحساب مقبول ومفعّل من الآدمن
+        if (!user.IsApproved)
+        {
+            return Unauthorized(new
+            {
+                success = false,
+                message = "حسابك قيد المراجعة، يرجى الانتظار لحين قبول طلبك من قِبل المسؤول."
+            });
+        }
 
         var token = GenerateToken(user);
 
@@ -89,6 +99,41 @@ public class AuthController : ControllerBase
             success = true,
             token
         });
+
+    }
+    // 1. دالة للموافقة على الحساب وتفعيله
+    [HttpPut("{id}/approve")]
+    public async Task<IActionResult> ApproveUser(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+
+        if (user == null)
+        {
+            return NotFound(new { success = false, message = "User not found" });
+        }
+
+        user.IsApproved = true; // تفعيل الحساب
+        await _context.SaveChangesAsync();
+
+        return Ok(new { success = true, message = "User approved successfully" });
+    }
+
+    // 2. دالة لحذف حساب المستخدم نهائياً
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteUser(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+
+        if (user == null)
+        {
+            return NotFound(new { success = false, message = "User not found" });
+        }
+
+        // اختياري: منع الآدمن من حذف نفسه بالخطأ
+        _context.Users.Remove(user);
+        await _context.SaveChangesAsync();
+
+        return Ok(new { success = true, message = "User deleted successfully" });
     }
     private string GenerateToken(User user)
     {

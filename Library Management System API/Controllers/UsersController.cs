@@ -59,4 +59,47 @@ public class UsersController : ControllerBase
             }
         });
     }
+    [HttpPut("{id}/approve")]
+    public async Task<IActionResult> ApproveUser(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+
+        if (user == null)
+        {
+            return NotFound(new
+            {
+                success = false,
+                message = "User not found"
+            });
+        }
+
+        user.IsApproved = true; // تحويل الحالة لمقبول
+        await _context.SaveChangesAsync(); // حفظ التغيير بقاعدة البيانات
+
+        return Ok(new
+        {
+            success = true,
+            message = "User approved successfully"
+        });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAllUsers()
+    {
+        var users = await _context.Users
+            .Select(u => new
+            {
+                u.Id,
+                u.Username,
+                u.Email,
+                u.Role
+            })
+            .ToListAsync();
+
+        return Ok(new
+        {
+            success = true,
+            data = users
+        });
+    }
 }
