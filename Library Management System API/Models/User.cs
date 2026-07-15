@@ -10,6 +10,7 @@
 
         public string PasswordHash { get; set; } = string.Empty;
         public string Role { get; set; } = "Member";
-        public bool IsApproved { get; set; } = false; 
+        public bool IsApproved { get; set; } = false;
+        public string ApprovalStatus { get; set; } = "Pending";
     }
 }

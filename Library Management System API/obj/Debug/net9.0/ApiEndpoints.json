@@ -278,6 +278,38 @@
   },
   {
     "ContainingType": "Library_Management_System_API.Controllers.UsersController",
+    "Method": "ApproveUser",
+    "RelativePath": "api/Users/{id}/approve",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.UsersController",
+    "Method": "RejectUser",
+    "RelativePath": "api/Users/{id}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System_API.Controllers.UsersController",
     "Method": "UpdateUserRole",
     "RelativePath": "api/Users/{id}/role",
     "HttpMethod": "PUT",

@@ -38,14 +38,13 @@ public class AuthController : ControllerBase
                 message = "Email already exists"
             });
         }
-
         var user = new User
         {
             Username = dto.Username,
             Email = dto.Email,
             PasswordHash = HashPassword(dto.Password),
             Role = "Member",
-            IsApproved = false // 👈 تأكد من وجود هذا السطر بالـ Register
+            ApprovalStatus = "Pending" 
         };
 
         _context.Users.Add(user);
@@ -83,13 +82,14 @@ public class AuthController : ControllerBase
             });
         }
         // التحقق من أن الحساب مقبول ومفعّل من الآدمن
-        if (!user.IsApproved)
+        if (user.ApprovalStatus == "Pending")
         {
-            return Unauthorized(new
-            {
-                success = false,
-                message = "حسابك قيد المراجعة، يرجى الانتظار لحين قبول طلبك من قِبل المسؤول."
-            });
+            return Unauthorized(new { success = false, message = "حسابك قيد المراجعة، يرجى الانتظار لحين قبول طلبك من قِبل المسؤول." });
+        }
+
+        if (user.ApprovalStatus == "Rejected")
+        {
+            return Unauthorized(new { success = false, message = "للأسف، تم رفض طلب انضمامك للمكتبة من قِبل المسؤول." });
         }
 
         var token = GenerateToken(user);
@@ -119,22 +119,7 @@ public class AuthController : ControllerBase
     }
 
     // 2. دالة لحذف حساب المستخدم نهائياً
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteUser(int id)
-    {
-        var user = await _context.Users.FindAsync(id);
-
-        if (user == null)
-        {
-            return NotFound(new { success = false, message = "User not found" });
-        }
-
-        // اختياري: منع الآدمن من حذف نفسه بالخطأ
-        _context.Users.Remove(user);
-        await _context.SaveChangesAsync();
-
-        return Ok(new { success = true, message = "User deleted successfully" });
-    }
+    
     private string GenerateToken(User user)
     {
         var jwtSettings = _configuration.GetSection("Jwt");

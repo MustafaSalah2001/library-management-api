@@ -59,28 +59,46 @@ public class UsersController : ControllerBase
             }
         });
     }
-    [HttpPut("{id}/approve")]
-    public async Task<IActionResult> ApproveUser(int id)
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteUser(int id)
     {
         var user = await _context.Users.FindAsync(id);
 
         if (user == null)
         {
-            return NotFound(new
-            {
-                success = false,
-                message = "User not found"
-            });
+            return NotFound(new { success = false, message = "User not found" });
         }
 
-        user.IsApproved = true; // تحويل الحالة لمقبول
-        await _context.SaveChangesAsync(); // حفظ التغيير بقاعدة البيانات
+        // اختياري: منع الآدمن من حذف نفسه بالخطأ
+        _context.Users.Remove(user);
+        await _context.SaveChangesAsync();
 
-        return Ok(new
-        {
-            success = true,
-            message = "User approved successfully"
-        });
+        return Ok(new { success = true, message = "User deleted successfully" });
+    }
+    // 2. قبول الحساب
+    [HttpPut("{id}/approve")]
+    public async Task<IActionResult> ApproveUser(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+        if (user == null) return NotFound(new { success = false, message = "User not found" });
+
+        user.ApprovalStatus = "Approved"; // تحويل الحالة إلى مقبول
+        await _context.SaveChangesAsync();
+
+        return Ok(new { success = true, message = "User approved successfully" });
+    }
+
+    // 3. رفض الحساب (الدالة الجديدة)
+    [HttpPut("{id}/reject")]
+    public async Task<IActionResult> RejectUser(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+        if (user == null) return NotFound(new { success = false, message = "User not found" });
+
+        user.ApprovalStatus = "Rejected"; // تحويل الحالة إلى مرفوض
+        await _context.SaveChangesAsync();
+
+        return Ok(new { success = true, message = "User rejected successfully" });
     }
 
     [HttpGet]
@@ -92,7 +110,8 @@ public class UsersController : ControllerBase
                 u.Id,
                 u.Username,
                 u.Email,
-                u.Role
+                u.Role,
+                u.ApprovalStatus // 👈 هذا السطر السحري الناقص هو المسؤول عن إرسال الحالة للرياكت!
             })
             .ToListAsync();
 
