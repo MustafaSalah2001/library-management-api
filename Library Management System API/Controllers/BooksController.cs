@@ -3,6 +3,7 @@ using Library_Management_System_API.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Library_Management_System_API.Controllers
 {
@@ -96,15 +97,21 @@ namespace Library_Management_System_API.Controllers
         }
         [HttpPost]
         [Authorize(Roles = "Admin,Librarian")]
+        [HttpPost]
+        [Authorize(Roles = "Admin,Librarian")]
         public async Task<IActionResult> AddBook(CreateBookDto dto)
         {
+            // جلب الـ ID الخاص بالمستخدم الحالي من الـ Token
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+
             var book = new Models.Book
             {
                 Title = dto.Title,
                 Author = dto.Author,
                 Category = dto.Category,
                 ISBN = dto.ISBN,
-                Quantity = dto.Quantity
+                Quantity = dto.Quantity,
+                CreatedById = userId // 👈 تخزين صاحب الكتاب
             };
 
             _context.Books.Add(book);
@@ -122,14 +129,15 @@ namespace Library_Management_System_API.Controllers
         public async Task<IActionResult> UpdateBook(int id, UpdateBookDto dto)
         {
             var book = await _context.Books.FindAsync(id);
+            if (book == null) return NotFound(new { success = false, message = "Book not found" });
 
-            if (book == null)
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var role = User.FindFirstValue(ClaimTypes.Role);
+
+            // إذا كان الموظف ليس آدمن، وليس هو من أضاف الكتاب 👈 نرفض العملية
+            if (role == "Librarian" && book.CreatedById != userId)
             {
-                return NotFound(new
-                {
-                    success = false,
-                    message = "Book not found"
-                });
+                return Forbid(); // منع الوصول
             }
 
             book.Title = dto.Title;
@@ -139,51 +147,33 @@ namespace Library_Management_System_API.Controllers
             book.Quantity = dto.Quantity;
 
             await _context.SaveChangesAsync();
-
-            return Ok(new
-            {
-                success = true,
-                message = "Book updated successfully",
-                data = book
-            });
+            return Ok(new { success = true, message = "Book updated successfully", data = book });
         }
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,Librarian")] // 👈 تعديل الصلاحية لتشمل الـ Librarian أيضاً
         public async Task<IActionResult> DeleteBook(int id)
         {
             var book = await _context.Books.FindAsync(id);
+            if (book == null) return NotFound(new { success = false, message = "Book not found" });
 
-            if (book == null)
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var role = User.FindFirstValue(ClaimTypes.Role);
+
+            // التحقق من الملكية
+            if (role == "Librarian" && book.CreatedById != userId)
             {
-                return NotFound(new
-                {
-                    success = false,
-                    message = "Book not found"
-                });
+                return Forbid();
             }
 
-            var hasActiveBorrowing = await _context.Borrowings.AnyAsync(b =>
-                b.BookId == id &&
-                b.Status == "Borrowed"
-            );
-
+            var hasActiveBorrowing = await _context.Borrowings.AnyAsync(b => b.BookId == id && b.Status == "Borrowed");
             if (hasActiveBorrowing)
             {
-                return BadRequest(new
-                {
-                    success = false,
-                    message = "Cannot delete book because it has active borrowings"
-                });
+                return BadRequest(new { success = false, message = "Cannot delete book because it has active borrowings" });
             }
 
             _context.Books.Remove(book);
             await _context.SaveChangesAsync();
-
-            return Ok(new
-            {
-                success = true,
-                message = "Book deleted successfully"
-            });
+            return Ok(new { success = true, message = "Book deleted successfully" });
         }
     }
 }
